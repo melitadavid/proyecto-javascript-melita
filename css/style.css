@@ -1,0 +1,27 @@
+
+
+
+
+/* ESTILO DEL HEADER */
+
+header{
+    background-color: aqua;
+    height: 10rem;
+    padding: 2rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around  ;
+}
+nav ul li{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    background-color: rgb(102, 74, 213);
+    padding: 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+}

@@ -39,3 +39,10 @@
  ingresarPrecio();
  mostrarTotal();
  
+
+
+ const productos = ["papel", "bolsas", "cubiertos", "vasos", "platos"];
+ productos.unshift ("arranque");
+
+ alert("productos de la pagina :" );
+ alert(productos);
