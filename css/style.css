@@ -5,9 +5,10 @@
 /* ESTILO DEL HEADER */
 
 header{
-    background-color: aqua;
+    background-color: rgb(193, 199, 199);
     height: 10rem;
     padding: 2rem;
+    
 }
 nav ul{
     display: flex;
@@ -19,9 +20,21 @@ nav ul li{
     color: black;
     font-weight: bold;
     list-style: none;
-    background-color: rgb(102, 74, 213);
+    background-color: rgb(111, 87, 205);
     padding: 1rem;
     padding-right: 4rem;
     padding-left: 4rem;
 
 }
+
+/* ESTILO DE SECTION(PRODUCTOS) */
+
+section{
+    background-color:rgb(193, 199, 199);
+    height: 20rem;
+}
+
+section h2{
+    padding: 1rem;
+}
+
