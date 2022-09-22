@@ -1,50 +1,5 @@
 
 
-
- const productos = ["PLATOS", "VASOS", "CUBIERTOS", "BOLSAS", "PAPEL"];
- productos.unshift ("arranque");
-
- alert("productos de la pagina :" );
- alert(productos); 
- 
-
-   //PREGUNTA
- /* 
- const lista = [
-   {nombre: "PLATOS", precio: 1000},
-   {nombre: "VASOS", precio: 1200},
-   {nombre: "CUBIERTOS", precio:900},
-   {nombre: "BOLSAS", precio:500},
-   {nombre: "PAPEL", precio:1245},
- ];
- 
-   
- 
- let nombre =prompt("ingrese el producto que quieras consultar");
- 
- while (nombre != "ESC") {
-   
-
-   let encontrado = lista.find(lista => lista.nombre == nombre);
- let mensaje = `
- nombre: ${encontrado.nombre}
- $${encontrado.precio}`;
-
- alert(mensaje);
-nombre =prompt("ingrese otro producto que quieras consultar");
-
-   
-}
- */
-
-
-
-
- 
- 
-
-  
-
 let gastoTotal = 0;
 let precioProducto = 0;
 let contador = 1;
@@ -83,3 +38,44 @@ function mostrarTotal() {
 
 ingresarPrecio();
 mostrarTotal();
+
+ const productos = ["PLATOS", "VASOS", "CUBIERTOS", "BOLSAS", "PAPEL"];
+ productos.unshift ("arranque");
+
+ alert("productos de la pagina :" );
+ alert(productos); 
+ 
+
+ 
+  
+ const lista = [
+   {nombre: "PLATOS", precio: 1000},
+   {nombre: "VASOS", precio: 1200},
+   {nombre: "CUBIERTOS", precio:900},
+   {nombre: "BOLSAS", precio:500},
+   {nombre: "PAPEL", precio:1245},
+ ];
+ 
+   
+ 
+ let nombre =prompt("ingrese el producto que quieras consultar");
+ 
+ while (nombre != "ESC") {
+   
+
+   let encontrado = lista.find(lista => lista.nombre == nombre);
+ let mensaje = `
+ nombre: ${encontrado.nombre}
+ $${encontrado.precio}`;
+
+ alert(mensaje);
+nombre =prompt("ingrese otro producto que quieras consultar");
+
+   
+ }
+
+ 
+ 
+
+  
+
