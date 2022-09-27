@@ -1,4 +1,4 @@
-
+/* 
 
 let gastoTotal = 0;
 let precioProducto = 0;
@@ -46,18 +46,45 @@ mostrarTotal();
  alert(productos); 
  
 
- 
+  */
+
+
+
   
- const lista = [
-   {nombre: "PLATOS", precio: 1000},
-   {nombre: "VASOS", precio: 1200},
-   {nombre: "CUBIERTOS", precio:900},
-   {nombre: "BOLSAS", precio:500},
-   {nombre: "PAPEL", precio:1245},
+let productos = [
+   {id: 1, nombre: "PLATOS",cantidad: "x 500", precio: 1000},
+   {id: 2, nombre: "VASOS",cantidad: "x 100", precio: 1200},
+   {id: 3, nombre: "CUBIERTOS",cantidad: "x 300", precio:900},
+   {id: 4, nombre: "BOLSAS",cantidad: "x 800", precio:500},
+   {id: 5, nombre: "PAPEL",cantidad: "x 1100", precio:1245},
  ];
+
+ let contenedor = document.getElementById("contenedor");
+
+ let formulario = document.getElementById("formulario");
+ formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+    contenedor.innerHTML = "";
+  let inputs = e.target.children;
+  
  
-   
+
+let producto = productos.find(item => item.nombre === inputs[0].value);
+let div = document.createElement("div");
+div.innerHTML = `
+<h3>ID: ${producto.id}</h3>
+<p>PRODUCTO: ${producto.nombre}</p>
+<p>CANTIDAD: ${producto.cantidad}</p>
+<b>$ ${producto.precio}</b>
+`;
+
+
+contenedor.append(div);
+
+ });
  
+/* 
  let nombre =prompt("ingrese el producto que quieras consultar");
  
  while (nombre != "ESC") {
@@ -72,10 +99,9 @@ mostrarTotal();
 nombre =prompt("ingrese otro producto que quieras consultar");
 
    
- }
+ } */
 
  
  
-
   
-
+ 
